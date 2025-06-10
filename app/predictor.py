@@ -11,7 +11,7 @@ script_path = os.path.abspath(__file__)
 # Get the project's root directory (one level up from /app)
 project_path = os.path.dirname(os.path.dirname(script_path))
 # Path to the cleaned dataset CSV file
-clean_csv_path = os.path.join(project_path, 'data', 'dataset.csv')
+clean_csv_path = os.path.join(project_path, 'data', 'grouped_dataset.csv')
 
 # === Load the dataset ===
 df = pd.read_csv(clean_csv_path)
@@ -34,6 +34,11 @@ x_train_vect = vectorizer.fit_transform(X_train)
 # Use Naive Bayes (good baseline for text classification)
 modelo = MultinomialNB()
 modelo.fit(x_train_vect, y_train)
+
+# === Debug ===
+print(df['sentiment'].value_counts())
+print(df[df['sentiment'] == 'happiness']['content'].head(10))
+
 
 # === Save model and vectorizer ===
 # Save the trained model and vectorizer to .pkl files for reuse

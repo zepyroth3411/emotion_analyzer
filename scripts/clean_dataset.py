@@ -25,7 +25,7 @@ def clean_text(dataframe):
 script_path = os.path.abspath(__file__)
 project_path = os.path.dirname(os.path.dirname(script_path))
 
-raw_csv_path = os.path.join(project_path, 'data', 'raw_dataset.csv')
+raw_csv_path = os.path.join(project_path, 'data', 'fixed_raw_dataset.csv')
 clean_csv_path = os.path.join(project_path, 'data', 'dataset.csv')
 
 # Create output directory if it doesn't exist
@@ -33,7 +33,7 @@ os.makedirs(os.path.dirname(clean_csv_path), exist_ok=True)
 
 # === LOAD AND CLEAN DATA ===
 df = pd.read_csv(raw_csv_path)
-df.drop("tweet_id", axis=1, inplace=True)
+# df.drop("tweet_id", axis=1, inplace=True)
 df = clean_text(df)
 
 # === SAVE CLEANED CSV ===
