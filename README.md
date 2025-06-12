@@ -60,5 +60,3 @@ Develop a functional, self-training microservice that can classify emotions in s
 This is the 1st of 6 services that will be integrated into a future website. Each service will aim to show how datasets, their balancing and cleaning directly affect the interpretation of primitive AI models.
 
 The approach will be technical, didactic and visual, ideal for AI enthusiasts, students or developers who want to see how models respond to different inputs, datasets and metrics in real time.
-
-### End
