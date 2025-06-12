@@ -37,6 +37,7 @@ group_by_emotions.py # Sorts dataset by emotion
 Make sure you have Python 3.8+ installed.
 
 ###🔧 Installation
+
 1.-  Clone the repository:
 `git clone https://github.com/zepyroth3411/emotion_analyzer.git`
 
