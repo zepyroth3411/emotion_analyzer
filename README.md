@@ -1,7 +1,7 @@
 # 📦 Emotion Analyzer
 This project builds a simple text emotion classifier using Python and machine learning. It processes a dataset of text samples labeled with emotions and trains a model that can predict the emotional tone of a new phrase.
 
-**📁 Folder Structure emotion_analyze**
+###📁 Folder Structure emotion_analyze**
 emotion_analyzer/
 ├── app/ 
  predictor.py # Trains and saves model + vectorizer
